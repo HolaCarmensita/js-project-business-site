@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Site</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header-desktop">
+      <div class="logo">Logo</div>
+      <div class="nav-container">
+        <nav class="nav-desktop">
+          <ul class="menu-list-desktop" id="menu-list">
+            <li><a href="#about" class="menu-link">About Me</a></li>
+            <li><a href="#projects" class="menu-link">Projects</a></li>
+            <li>
+              <a href="#contact-form" class="menu-link">Get in Touch</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header-mobile">
+          <div class="logo">Logo</div>
+          <nav class="nav">
+            <div class="menu-icon" id="menu-icon">☰</div>
+            <ul class="menu-list" id="menu-list">
+              <li class="close-menu" id="close-menu">✖</li>
+              <li><a href="#about" class="menu-link">About Me</a></li>
+              <li><a href="#projects" class="menu-link">Projects</a></li>
+              <li>
+                <a href="#contact-form" class="menu-link">Get in Touch</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <main class="content">
+          <hero class="hero">
+            <h1>Hola!</h1>
+            What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not.
+            <a href="#contact-form" class="contact-link">Get in Touch</a>
+          </hero>
+          <section id="about">
+            <h1>About!</h1>
+
+            About me content... What is Lorem Ipsum? Lorem Ipsum is simply dummy
+            text of the printing and typesetting industry. Lorem Ipsum has been
+            the industry's standard dummy text ever since the 1500s, when an
+            unknown printer took a galley of type and scrambled it to make a
+            type specimen book. It has survived not only five centuries, but
+            also the leap into electronic typesetting, remaining essentially
+            unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently
+            with desktop publishing software like Aldus PageMaker including
+            versions of Lorem Ipsum. Why do we use it? It is a long established
+            fact that a reader will be distracted by the readable content of a
+            page when looking at its layout. About me content...What is Lorem
+            Ipsum? Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in
+            the 1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </section>
+
+          <section id="projects">
+            <h1>Projects</h1>
+
+            Projects content... What is Lorem Ipsum? Lorem Ipsum is simply dummy
+            text of the printing and typesetting industry. Lorem Ipsum has been
+            the industry's standard dummy text ever since the 1500s, when an
+            unknown printer took a galley of type and scrambled it to make a
+            type specimen book. It has survived not only five centuries, but
+            also the leap into electronic typesetting, remaining essentially
+            unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently
+            with desktop publishing software like Aldus PageMaker including
+            versions of Lorem Ipsum. Why do we use it? It is a long established
+            fact that a reader will be distracted by the readable content of a
+            page when looking at its layout.
+          </section>
+
+          <section id="contact-form">
+            <h2>Contact Me</h2>
+            <form id="contact-form-container">
+              <div class="input-container">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" />
+              </div>
+
+              <div class="input-container">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="input-container">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+              </div>
+
+              <button type="submit">Send</button>
+            </form>
+          </section>
+        </main>
+
+        <footer class="footer">© 2024 Your Name</footer>
+      </div>
+    </div>
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>
