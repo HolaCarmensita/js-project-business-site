@@ -20,22 +20,49 @@
   </head>
   <body>
     <header class="site-header">
-      <nav class="navbar">
-        <div class="logo">Carmencita</div>
-        <button class="hamburger" id="hamburger">☰</button>
+      <div class="logo"><h2>Carmencita</h2></div>
+      <span class="hamburger" id="hamburger" onclick="openNav()">☰</span>
+
+      <nav class="navbar" id="navbar" onclick="closeNav()">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
         <ul class="nav-links" id="nav-links">
           <li><a href="#">Hem</a></li>
           <li><a href="#">Projekt</a></li>
           <li><a href="#">Kontakt</a></li>
         </ul>
       </nav>
-      <section class="hero">
-        <h1>Helo this is me!</h1>
-        <p>Hola this is my text</p>
-      </section>
     </header>
 
+    <section class="hero">
+      <h1>Helo this is me!</h1>
+      <p>Hola this is my text</p>
+    </section>
+
     <main class="main-content">
+      <section class="card-grid">
+        <article class="card">
+          <h3>This is a Card</h3>
+          <p>This is text for the card</p>
+        </article>
+        <article class="card">
+          <h3>This is a Card</h3>
+          <p>This is text for the card</p>
+        </article>
+        <article class="card">
+          <h3>This is a Card</h3>
+          <p>This is text for the card</p>
+        </article>
+        <article class="card">
+          <h3>This is a Card</h3>
+          <p>This is text for the card</p>
+        </article>
+        <article class="card">
+          <h3>This is a Card</h3>
+          <p>This is text for the card</p>
+        </article>
+      </section>
       <section class="form-section">
         <h2>Kontakta oss</h2>
         <form action="https://httpbin.org/anything" method="POST">
@@ -75,7 +102,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2025 Mitt Företag. Alla rättigheter förbehållna.</p>
+      <p>&copy; Hola Carmencita</p>
     </footer>
 
     <script src="script.js"></script>
