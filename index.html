@@ -5,8 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Hola site</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo">Carmencita</div>
+        <button class="hamburger" id="hamburger">☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Hem</a></li>
+          <li><a href="#">Projekt</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <h1>Helo this is me!</h1>
+        <p>Hola this is my text</p>
+      </section>
+    </header>
+
+    <main class="main-content">
+      <section class="form-section">
+        <h2>Kontakta oss</h2>
+        <form action="https://httpbin.org/anything" method="POST">
+          <label for="name">Namn:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="password">Lösenord:</label>
+          <input type="password" id="password" name="password" required />
+
+          <fieldset>
+            <legend>Välj en tjänst:</legend>
+            <label>
+              <input type="radio" name="service" value="design" />
+              Design</label
+            >
+            <label
+              ><input type="radio" name="service" value="utveckling" />
+              Utveckling</label
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>Intressen:</legend>
+            <label
+              ><input type="checkbox" name="interest" value="nyhetsbrev" />
+              Nyhetsbrev</label
+            >
+            <label
+              ><input type="checkbox" name="interest" value="erbjudanden" />
+              Specialerbjudanden</label
+            >
+          </fieldset>
+
+          <button type="submit">Skicka</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Mitt Företag. Alla rättigheter förbehållna.</p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

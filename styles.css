@@ -2,10 +2,25 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: beige;
+  font-family: 'Montserrat', sans-serif;
 }
+
+/* {
+  font-family: "Eczar", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
 
 .wrapper {
   max-width: 1300px; /* Begränsar sidans bredd */
   margin: 0 auto; /* Centrerar innehållet */
   padding: 0 20px; /* Ger lite luft vid sidorna */
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Eczar', serif;
+  font-weight: 500;
 }
