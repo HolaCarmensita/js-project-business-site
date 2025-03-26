@@ -20,89 +20,115 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="logo"><h2>Carmencita</h2></div>
-      <span class="hamburger" id="hamburger" onclick="openNav()">☰</span>
+      <div class="wrapper header-content">
+        <div class="logo"><h2>Carmencita</h2></div>
+        <span class="hamburger" id="hamburger" onclick="openNav()">☰</span>
 
-      <nav class="navbar" id="navbar" onclick="closeNav()">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#">Hem</a></li>
-          <li><a href="#">Projekt</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
+        <nav class="navbar" id="navbar" onclick="closeNav()">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Projekt</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="hero">
-      <h1>Helo this is me!</h1>
+      <h1>Helo this is a hero!</h1>
       <p>Hola this is my text</p>
     </section>
 
     <main class="main-content">
-      <section class="card-grid">
-        <article class="card">
-          <h3>This is a Card</h3>
-          <p>This is text for the card</p>
-        </article>
-        <article class="card">
-          <h3>This is a Card</h3>
-          <p>This is text for the card</p>
-        </article>
-        <article class="card">
-          <h3>This is a Card</h3>
-          <p>This is text for the card</p>
-        </article>
-        <article class="card">
-          <h3>This is a Card</h3>
-          <p>This is text for the card</p>
-        </article>
-        <article class="card">
-          <h3>This is a Card</h3>
-          <p>This is text for the card</p>
-        </article>
-      </section>
-      <section class="form-section">
-        <h2>Kontakta oss</h2>
-        <form action="https://httpbin.org/anything" method="POST">
-          <label for="name">Namn:</label>
-          <input type="text" id="name" name="name" required />
+      <div class="wrapper">
+        <section class="card-grid">
+          <article class="card">
+            <h3>This is a Card</h3>
+            <p>
+              This is text for the card:Lorem Ipsum è considerato il testo
+              segnaposto standard sin dal sedicesimo secolo.
+            </p>
+          </article>
+          <article class="card">
+            <h3>This is a Card</h3>
+            <p>
+              This is text for the card:Lorem Ipsum è considerato il testo
+              segnaposto standard sin dal sedicesimo secolo.
+            </p>
+          </article>
+          <article class="card">
+            <h3>This is a Card</h3>
+            <p>
+              This is text for the card:Lorem Ipsum è considerato il testo
+              segnaposto standard sin dal sedicesimo secolo.
+            </p>
+          </article>
+          <article class="card">
+            <h3>This is a Card</h3>
+            <p>
+              This is text for the card:Lorem Ipsum è considerato il testo
+              segnaposto standard sin dal sedicesimo secolo.
+            </p>
+          </article>
+          <article class="card">
+            <h3>This is a Card</h3>
+            <p>
+              This is text for the card:Lorem Ipsum è considerato il testo
+              segnaposto standard sin dal sedicesimo secolo.
+            </p>
+          </article>
+          <article class="card">
+            <h3>This is a Card</h3>
+            <p>
+              This is text for the card:Lorem Ipsum è considerato il testo
+              segnaposto standard sin dal sedicesimo secolo.
+            </p>
+          </article>
+          <section class="form-section">
+            <h2>Kontakta oss</h2>
+            <form action="https://httpbin.org/anything" method="POST">
+              <label for="name">Namn:</label>
+              <input type="text" id="name" name="name" required />
 
-          <label for="password">Lösenord:</label>
-          <input type="password" id="password" name="password" required />
+              <label for="password">Lösenord:</label>
+              <input type="password" id="password" name="password" required />
 
-          <fieldset>
-            <legend>Välj en tjänst:</legend>
-            <label>
-              <input type="radio" name="service" value="design" />
-              Design</label
-            >
-            <label
-              ><input type="radio" name="service" value="utveckling" />
-              Utveckling</label
-            >
-          </fieldset>
+              <fieldset>
+                <legend>Välj en tjänst:</legend>
+                <label>
+                  <input type="radio" name="service" value="design" />
+                  Design</label
+                >
+                <label
+                  ><input type="radio" name="service" value="utveckling" />
+                  Utveckling</label
+                >
+              </fieldset>
 
-          <fieldset>
-            <legend>Intressen:</legend>
-            <label
-              ><input type="checkbox" name="interest" value="nyhetsbrev" />
-              Nyhetsbrev</label
-            >
-            <label
-              ><input type="checkbox" name="interest" value="erbjudanden" />
-              Specialerbjudanden</label
-            >
-          </fieldset>
+              <fieldset>
+                <legend>Intressen:</legend>
+                <label
+                  ><input type="checkbox" name="interest" value="nyhetsbrev" />
+                  Nyhetsbrev</label
+                >
+                <label
+                  ><input type="checkbox" name="interest" value="erbjudanden" />
+                  Specialerbjudanden</label
+                >
+              </fieldset>
 
-          <button type="submit">Skicka</button>
-        </form>
-      </section>
+              <button type="submit">Skicka</button>
+            </form>
+          </section>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; Hola Carmencita</p>
+      <div class="wrapper"><p>&copy; Hola Carmencitas site</p></div>
     </footer>
 
     <script src="script.js"></script>
