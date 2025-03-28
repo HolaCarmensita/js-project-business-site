@@ -15,13 +15,6 @@ body {
   padding: 1rem 2rem 1rem 2rem;
 }
 
-/* {
-  font-family: "Eczar", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-
 a {
   text-decoration: none;
   color: black;
@@ -56,11 +49,20 @@ h3 {
 
 .hero {
   text-align: left;
-  background-image: url(assets/images/Vector.svg);
-  background-size: contain;
+  background-image: url(assets/images/Huvudsida.png);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 190px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 45px;
+  color: white;
+  text-shadow: grey 1px 0 10px;
 }
 
 .card,
@@ -155,43 +157,38 @@ button[type='submit']:hover {
   color: black;
 }
 
-.footer {
-}
-
 .navbar {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  background-color: rgb(0, 0, 0); /* Black fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  background-color: beige;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar.open {
+  width: 100%;
 }
 
 .nav-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: fit-content;
-  position: relative;
-  top: 25%; /* 25% from the top */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  width: 100%;
+  text-align: center;
 }
 
 .navbar a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 2rem;
   color: #818181;
-  width: fit-content;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+  transition: 0.3s;
 }
 
 .navbar a:hover,
@@ -203,33 +200,69 @@ button[type='submit']:hover {
   position: absolute;
   top: 20px;
   right: 45px;
-  font-size: 60px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+  z-index: 0;
 }
 
 @media (min-width: 600px) {
-  .main-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .form-section {
-    grid-column: 1 / -1;
+    grid-column: 2 / 4;
   }
 
-  .hero {
-    height: 500px;
+  .main-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .card {
+    grid-column: span 2;
   }
 
   .wrapper {
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 }
 
-@media (min-width: 900px) {
-  .main-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
+@media (min-width: 1200px) {
+  .form-section {
+    padding: 3rem;
+  }
+  .card {
+    grid-column: span 1;
   }
 
-  .form-section {
-    grid-column: 2 / 4; /* Start vid kolumn 2, sluta innan kolumn 4 */
+  .navbar {
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    display: flex;
+    align-items: center;
+    transition: none;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 0;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+    color: #000;
+  }
+
+  .hamburger,
+  .closebtn {
+    display: none;
   }
 }

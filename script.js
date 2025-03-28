@@ -1,11 +1,10 @@
 console.log('✅ JavaScript is running!');
 
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById('navbar').style.width = '100%';
+function toggleNav() {
+  document.getElementById('navbar').classList.toggle('open');
+  console.log('toggle nav is happening');
 }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
-  document.getElementById('navbar').style.width = '0%';
+  document.getElementById('navbar').classList.remove('open');
 }
